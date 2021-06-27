@@ -76,30 +76,29 @@ public class main {
 	// returns the word concatenated to itself n number of times. (i.e. if I pass in
 	// “Hello” and 3, I would expect the method to return “HelloHelloHello”).
 
-	public static String Concatenate(String term, int a) {
-
-		String word = "";
-		for (int i = 0; i < a; i++) {
-			word += term;
-		}
-		return word;
+	public static void main1(String args[]) {
+		String word1 = " ";
+		word1 = word1.concat(" ");
+		word1 = word1.concat(" ");
+		System.out.println(word1);
+				
 	}
 	// 8. Write a method that takes two Strings, firstName and lastName, and returns
 	// a full name (the full name should be the first and the last name as a String
 	// separated by a space).
 
-	public static String fullName(String firstName, String lastName) {
-
-		return firstName + " " + lastName;
-	}
+	public static void fullName(String firstName, String lastName) {
+			System.out.println(firstName + " " + lastName);
+				
+					}
 
 	// 9. Write a method that takes an array of int and returns true if the sum of
 	// all the ints in the array is greater than 100.
-	public static boolean isItMoreThenOneHundred(int[] array) {
+	public static boolean isItMoreThenOneHundred(int array) {
 		int sum = 0;
 		for (int i = 0; i < Array.getLength(i); i++)
 			;
-		if (sum > 100) {
+		if (sum >= 100) {
 			return true;
 		} else {
 			return false;
@@ -111,16 +110,16 @@ public class main {
 	public static double averageOfElements(double[] array) {
 		double sum = 0;
 		for (int i = 0; i < Array.getLength(i); i++) {
-			sum = sum + array.length;
+			sum = ((sum + array.length) / array.length);
 		}
-		return sum / array.length;
+		return sum;
 	}
 
 	// 11. Write a method that takes two arrays of double and returns true if the
 	// average of the elements in the first array is greater than the average of the
 	// elements in the second array.
-	public static boolean doubleAverageOfArrays(double[] array1, double[] array2) {
-		if ((averagearray(array1)) > (averagearray(array2))) {
+	public static boolean doubleAverageOfArrays(double array1, double array2) {
+		if (array1 > array2) {
 			return true;
 		} else {
 			return false;
@@ -131,7 +130,7 @@ public class main {
 	// moneyInPocket is greater than 10.50.
 
 	public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
-		if (isHotOutside == !false && moneyInPocket >= 10.50) {
+		if (moneyInPocket >= 10.50 && isHotOutside == !false) {
 			return true;
 		} else {
 			return false;
@@ -149,8 +148,4 @@ public class main {
 		}
 	}
 
-	private static int averagearray(double[] array1) {
-		// TODO Auto-generated method stub
-		return 0;
 	}
-}
